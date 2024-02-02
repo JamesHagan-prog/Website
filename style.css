@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(9, 119, 236);
+    background-color: rgb(0,0,128);
   }
   .Title {
     text-align: center;
@@ -9,4 +9,11 @@ body {
   }
   h5 {
     color: rgb(21, 10, 120);
+  }
+  .squareTitle {
+    margin: auto;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    background-color: #ffffff;
   }
