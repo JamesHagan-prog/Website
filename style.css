@@ -1,19 +1,157 @@
-body {
-    background-color: rgb(0,0,128);
+/*
+-James Hagan
+-Personal Website
+Last Modified:10/21/24
+*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap');/* EXTRA CREDIT custom font */
+h1, h2, h3, h4, h5, h6 { 
+    font-family: 'Merriweather', serif;
+}
+body, p, ul, ol, table { 
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    max-width: 100%
+}
+ .side {
+    flex: 0 1 35%;
+    background-color: #C1C6C8;
+    padding: 5px;
+    border-right: solid 1px black;
+    display: flex;
+    align-items: center;   
+    flex-direction: column;
+ }
+ .main {
+    flex: 0 1 65%;
+    background-color: #041E42;
+    border-left: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+    /*background: linear-gradient(#041E42,#C8102E); */
+ }
+ .header {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    z-index: 999;
+    background-color: #C8102E;
+    padding: 5px;
+    border-bottom: solid 2px black;
   }
-  .Title {
+#logo {
+    border-radius: 50%;
+    border: solid 2px black;
+    width: 150px;
+    height: 100px;
+  }
+#portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px; 
+    height: 450px;
+    border: solid 2px #C8102E;
+    outline: solid 4px #041E42;
+  }
+p {
     text-align: center;
-  }
-  h1 {
-    color: rgb(0, 0, 0);
-  }
-  h5 {
-    color: rgb(21, 10, 120);
-  }
-  .squareTitle {
-    margin: auto;
+    border: solid 2px black;
+    background-color: #C1C6C8;
+    display: inline-block;
+    padding: 5px;
+}
+h2 {
     text-align: center;
-    height: 575px;
-    width: 800px;
-    background-color: #ffffff;
-  }
+}
+main h2 {
+    padding: 2px;
+    text-align: center;
+    border: solid 2px black;
+    background-color: #C1C6C8;
+    display: inline;
+}
+ul {
+    list-style-type: square;
+    border: solid 2px black;
+    background-color: #C1C6C8;
+    display: inline-block;
+}
+ul li::marker {
+    color: #C8102E;
+}
+nav {
+    height: 50px;  
+    margin-left: auto;     
+}
+nav a {
+    color: #041E42;
+    text-decoration: none;       
+    margin: 20px;     
+    font-size: 24px;    
+}
+main tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+main tr:nth-child(odd) {
+    background-color: #C1C6C8;
+}
+main tr:hover {
+    background-color: #C8102E;
+}
+main table {
+    border: solid 1px black;   
+    background-color: #C8102E;
+    margin: 2px;
+}
+main th, main td {
+    border: solid 1px black;   
+}
+ol {
+    text-align: center;
+    border: solid 2px black;
+    background-color: #C8102E;
+    display: inline-block;
+    list-style-position: inside;
+    margin: 0;
+    padding: 5px;
+}
+ol li {
+    background-color: #C1C6C8;
+    border: solid 2px  black;
+}
+ol li::marker {
+    color: #C8102E;
+}
+#img1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid 2px  black;
+}
+#img2 {
+    width: 341px;
+    height: 512px;
+    border: solid 2px #C8102E;
+    outline: solid 4px #041E42;
+}
+#img3 {
+    width: 500px;
+    height: 408px;
+}
+#img3:hover {
+    transform: scaleX(-1);
+}
+#career, #education, #interests {
+    padding-top: 120px; 
+    margin-top: -100px; 
+}
+.side table {
+    text-align: center;
+}
